@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="padding: 0; margin: 0; box-sizing: border-box; width: 100%;">
+   <nav>
+    <div class="navigation">
+       <div class="navleft">
+        <p style="display: inline;"><h1 style="display: inline; color: orangered;"> Link To Screeshot </h1> BY Anil Kay</p>
+       </div>
+        <div class="navright">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+
+
+        </div>
+    </div>
+   </nav>
+
+    <div class="inputurl">
+
+        <input type="text" placeholder="Enter Url Of any Website" id="inputvalue" value="">
+        <button type="button" onclick="featchdata()" id="clickbtn">Click To Get Screenshot</button>
+
+    
+
+        
+
+    </div>
+
+    <img src="" alt="" id="imgadded" width="100%">
+
+    <a id="downloadLink" href="#" download="screenshot.png"> </a>
+
+    <div class="loader">
+        Loading..... 
+        <p>Please wait a moment</p>
+    </div>
+
+
+    <footer>
+        <h4>Design & developed By @<a href="backtick.in" style="text-decoration: none; color: white;"> Anil Kay</a></h4>
+    </footer>
+
+    <style>
+      
+        body{
+            box-sizing: border-box;
+            /* overflow-x: hidden; */
+        }
+        nav{
+            width: 100%;
+            padding: 10px 0px;
+            box-shadow: 2px 4px 6px grey;
+            text-align: center;
+        }
+        .navigation{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+        }
+        .navright>a{
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+
+        }
+        .inputurl{
+            
+            width: 100%;
+            text-align: center;          
+            padding: 50px 0px;
+            margin: 20px 0px;
+        }
+        input{
+            width: 380px;
+            height: 30px;
+            outline: none;
+            margin: 10px 0px;
+        }
+        button{
+            height: 35px;
+            border: none;
+            background-color: orangered;
+            color: white;
+            transition: all ease .2s;
+            margin: 10px 0px;
+        }
+        button:hover{
+            background-color: rgb(202, 55, 2);
+        }
+
+        .loader{
+            display: none;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        #downloadLink{
+            /* padding: 10px 5px; */
+            background-color: orangered;
+            color: white;
+            text-decoration: none;
+        }
+        img{
+            box-shadow: 2px 3px 5px grey;
+        }
+
+        footer{
+            width: 100%;
+            position: absolute;
+           bottom: 0;
+           text-align: center;
+           background-color: orangered;
+           color: white;
+        }
+
+    </style>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
